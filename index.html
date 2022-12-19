@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Functions</h1>
+    <ol>
+        <li>
+            <h2>Create one function with zero parameter having a console statement;</h2>
+            <h3>CODE :</h3>
+            <pre>
+                function sum(){
+                    var X=10;
+                    var Y=20
+                    var Z=X+Y;
+                
+                    return Z;
+                }
+                console.log(sum());
+            </pre>
+            <h3>OUTPUT :</h3>
+            <pre>
+                30
+            </pre>
+        </li>
+        <li>
+            <h2>Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</h2>
+            <h3>CODE :</h3>
+            <pre>
+                function sumoftwo(a,b){
+                      return a+b;
+                }
+                console.log(sumoftwo(3,4));
+            </pre>
+            <h3>OUTPUT :</h3>
+            <pre>
+                7
+            </pre>
+        </li>
+        <li>
+            <h2>Create one arrow function</h2>
+            <h3>CODE :</h3>
+            <pre>
+                const car=(a,b)=>{
+    
+                    return a+b;
+                }
+                let g=car(4,4);
+                console.log(g);
+            </pre>
+            <h3>OUTPUT :</h3>
+            <pre>
+                8
+            </pre>
+        </li>
+        <li>
+            <h2><pre>
+                "Print output: 
+                var x = 21;
+                var girl = function () {
+                    console.log(x);
+                    var x = 20;
+                };
+                girl ();"                
+            </pre></h2>
+            
+            <h3>OUTPUT :</h3>
+            <pre>
+                undefined
+            </pre>
+        </li>
+        <li>
+            <h2><pre>
+                "Print output: 
+                var x = 21;
+                girl ();
+                console.log(x)
+                function girl() {
+                    console.log(x);
+                    var x = 20;
+                };
+                "                
+            </pre></h2>
+            
+            <h3>OUTPUT :</h3>
+            <pre>
+                undefined
+
+                21
+            </pre>
+        </li>
+        <li>
+            <h2><pre>
+                "Print output
+
+                var x = 21;
+                a();
+                b();
+                
+                  function a() {
+                    
+                   x = 20;
+                  console.log(x);
+                };
+                 function b() {
+                    
+                    x = 40;
+                   console.log(x);
+                };"                
+            </pre></h2>
+            
+            <h3>OUTPUT :</h3>
+            <pre>
+                20 
+                40
+            </pre>
+        </li>
+        <li>
+            <h2>Write a function that accepts parameter n and returns factorial of n</h2>
+            <h3>CODE :</h3>
+            <pre>
+                function factorial(N){
+                    if(N==0 || N==1 ){
+                        return 1;
+                    }
+                    else{
+                        return N*factorial(N-1);
+                    }
+                }
+                 let N=factorial(4)
+                 console.log(N);
+            </pre>
+            <h3>OUTPUT :</h3>
+            <pre>
+                24
+            </pre>
+        </li>
+    </ol>
+    <script src="index.js"></script>
+</body>
+</html>
